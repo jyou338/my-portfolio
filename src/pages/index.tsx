@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 
+import { TestContainer } from './styles';
+
 const Index = () => {
   const router = useRouter();
 
@@ -15,15 +17,14 @@ const Index = () => {
         />
       }
     >
+      <TestContainer>Hello!</TestContainer>
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
         <img
           src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
           alt="Nextjs starter banner"
         />
       </a>
-      <h1 className="text-2xl font-bold">
-        Boilerplate code for your Nextjs project with Tailwind CSS
-      </h1>
+      <h1 className="text-2xl font-bold">Test</h1>
       <p>
         <span role="img" aria-label="rocket">
           🚀
