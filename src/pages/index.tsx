@@ -1,9 +1,8 @@
 import { useRouter } from 'next/router';
 
+import Header from '@/components/Header';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
-
-import { TestContainer } from './styles';
 
 const Index = () => {
   const router = useRouter();
@@ -17,7 +16,7 @@ const Index = () => {
         />
       }
     >
-      <TestContainer>Hello!</TestContainer>
+      <Header>Hello!</Header>
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
         <img
           src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
